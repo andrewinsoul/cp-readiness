@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Google</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <script type="text/javascript">
+            function clickHandler(){
+                function isSpace(word) {
+                    for(let k=0; k<word.length; k++){
+                        if(word[k] !== ' '){
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                let entry = document.search.search.value;
+                if (isSpace(entry) === true){
+                    alert('Please type a word, sentence or phrase.')
+                    document.search.search.focus()
+                }
+                else{
+                    alert(entry)
+                }
+            }
+        </script>
+        
+        <style>
+            @media screen and (max-width: 1000px) and (min-width:960px) and (min-height: 700px) {
+                input.search-box {
+                    margin-left:  18%;
+                    width: 60%;
+                    padding: 2px 10px;
+                }
+                input.submit-btn {
+                    margin-top: 1%;
+                    margin-left: 40%;
+                }
+                
+                input.submit-btn2 {
+                    margin-top: 1%;
+                    margin-left: 3%;
+                }
+                div.title {
+                    font-size: 150%;
+                    margin-left: 0px;
+                }
+                footer{
+                    margin-top: 37%;
+                }
+                footer li {
+                    border-right: 2px solid blue;
+                    padding-right: 0.5%;
+                }
+                h1{
+                    padding-top: 10%;
+                }
+            }
+            
+            @media screen and (width: 768px) and (height: 1024px) {
+                input.search-box {
+                    margin-left:  18%;
+                    width: 60%;
+                    padding: 2px 10px;
+                }
+                input.submit-btn {
+                    margin-top: 1%;
+                    margin-left: 40%;
+                }
+                
+                input.submit-btn2 {
+                    margin-top: 1%;
+                    margin-left: 3%;
+                }
+                div.title {
+                    font-size: 150%;
+                    margin-left: 0px;
+                }
+                footer{
+                    margin-top: 75%;
+                }
+                footer li {
+                    border-right: 2px solid blue;
+                    padding-right: 0.1rem;
+                }
+                h1{
+                    padding-top: 30%;
+                }
+            }
+
+            @media screen and (width: 1024px) and (height: 768px) {
+                input.search-box {
+                    margin-left:  18%;
+                    width: 60%;
+                    padding: 2px 10px;
+                }
+                input.submit-btn {
+                    margin-top: 1%;
+                    margin-left: 40%;
+                }
+                
+                input.submit-btn2 {
+                    margin-top: 1%;
+                    margin-left: 3%;
+                }
+                div.title {
+                    font-size: 150%;
+                    margin-left: 0px;
+                }
+                footer{
+                    margin-top: 32%;
+                    margin-left: 0;
+                }
+                footer li {
+                    border-right: 2px solid blue;
+                    padding-right: 0.5%;
+                }
+                h1{
+                    padding-top: 15%;
+                }
+            }
+            @media screen and (max-width: 1024px) and (min-width:960px) and (height: 1366px) {
+                input.search-box {
+                    margin-left:  18%;
+                    width: 60%;
+                    padding: 2px 10px;
+                }
+                input.submit-btn {
+                    margin-top: 1%;
+                    margin-left: 40%;
+                }
+                
+                input.submit-btn2 {
+                    margin-top: 1%;
+                    margin-left: 3%;
+                }
+                div.title {
+                    font-size: 150%;
+                    margin-left: 0px;
+                }
+                footer{
+                    margin-top: 75%;
+                }
+                footer li {
+                    border-right: 2px solid blue;
+                    padding-right: 0.5%;
+                }
+                h1{
+                    padding-top: 30%;
+                }
+            }
+
+            @media screen and (min-width: 1200px) and (max-width: 1259px) and (min-height: 690px) {
+                div.title {
+                    font-size: 250%;
+                    margin-left: 0px;
+                }
+                footer{
+                    margin-top: 18%;
+                }
+                footer li {
+                    border-right: 2px solid blue;
+                    padding-right: 1%;
+                }
+                h1{
+                    padding-top: 15%;
+
+                }
+                input.search-box {
+                    margin-left:  18%;
+                    width: 60%;
+                    padding: 2px 10px;
+                }
+                input.submit-btn {
+                    margin-top: 1%;
+                    margin-left: 40%;
+                }
+                input.submit-btn2 {
+                    margin-top: 1%;
+                    margin-left: 3%;
+                }
+            }
+
+            @media screen and (min-width: 1260px) and (min-height: 690px) {    
+                div.title {
+                    font-size: 250%;
+                    margin-left: 0px;
+                }
+                footer{
+                    margin-top: 18%;
+                }
+                footer li {
+                    border-right: 2px solid blue;
+                    padding-right: 1%;
+                }
+                h1 {
+                    padding-top: 15%;
+
+                }
+                input.search-box {
+                    margin-left:  18%;
+                    width: 60%;
+                    padding: 2px 10px;
+                }
+                input.submit-btn {
+                    margin-top: 1%;
+                    margin-left: 40%;
+                }
+                input.submit-btn2 {
+                    margin-top: 1%;
+                    margin-left: 3%;
+                }
+            }
+
+            span.bottom{
+                float: right;
+            }
+            #signin{
+                text-decoration: none;
+                color: darkgray;
+                margin-right: 5%;
+                float: right;
+            }
+            body{
+                margin: 0px;
+            }
+            li.last {
+                border-right: 0px solid white;
+            }
+            nav{
+                width: 100%;
+                margin: 0px;
+                padding: 0.01em;
+                background-color: rgba(24, 23, 23, 0.863);
+            }
+            li{
+                display: inline-block;
+                margin-right: 1%;
+            }
+            li a.nav:link {
+                text-decoration: none;
+                color: darkgray;
+            }
+            li a.nav:visited {
+                color: #ffffff;
+            }
+            li a.nav:hover {
+                border-bottom: 2px skyblue solid;
+                color: skyblue;
+            }
+            select{
+                background-color: rgba(24, 23, 23, 0.863);
+                color: darkgray;
+            }
+            footer a {
+                color: blue;
+                text-decoration: none;
+            }
+            span{
+                margin-left: 0;
+                padding-left: 0;
+            }
+            input.search-box {
+                border-color: lightgray;
+                border-radius: 4px;
+                height: 25px;
+            }
+            h1 {
+                text-align: center
+            }
+            #one{
+                color: blue;
+            }
+            #two{
+                color: red;
+            }
+            #three{
+                color: gold;
+            }
+            #four{
+                color: blue;
+            }
+            #five{
+                color: green;
+            }
+            #six{
+                color: red;
+            }
+            input.search-box {
+                margin-left:  18%;
+                width: 60%;
+                padding: 2px 10px;
+            }
+            input.submit-btn {
+                margin-top: 1%;
+                margin-left: 40%;
+            }    
+            input.submit-btn2 {
+                margin-top: 1%;
+                margin-left: 3%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a class='nav' href="html-css.html">Web</a></li>
+                <li><a class='nav' href="/images">Images</a></li>
+                <li><a class='nav' href="/videos">Videos</a></li>
+                <li><a class='nav' href="/maps">Maps</a></li>
+                <li><a class='nav' href="/news">News</a></li>
+                <li><a class='nav' href="/shopping">Shopping</a></li>
+                <li><a class='nav' href="/gmail">Gmail</a></li>
+                <li>
+                    <select name="queryWord" onchange="location=this.value;">
+                        <option>more</option>
+                        <option value="people.com">People</option>
+                        <option value="travel.com">Travelling</option>
+                        <option value="book.com">Books</option>
+                    </select>
+                </li>
+                <li id="signin"><a class='nav' href="/signin">Sign In</a></li>
+            </ul>
+        </nav>
+        <h1>
+            <div class="title">
+                <span id="one">  G</span>
+                <span id="two">  o</span>
+                <span id="three">o</span>
+                <span id="four"> g</span>
+                <span id="five"> l</span>
+                <span id="six">  e</span>
+            </div>
+        </h1>
+        <form action="" name="search">
+            <div class="search-form">
+                <input type="text" name="search" class="search-box"/><br/>
+                <input type="submit" class="submit-btn" value="Google Search" onclick="clickHandler()"/>
+                <input type="submit" class="submit-btn2" value="I'm feeling lucky"/>
+            </div>
+        </form>
+        <footer>
+            <ul style="display: inline; vertical-align: bottom">
+                <li><a href="">Advertising Programs</a></li>
+                <li><a href="">Business Solutions</a></li>
+                <li><a href="">About Google</a></li>
+                <li><a href="">Go to Google Nigeria</a></li>
+                <li class="last"><a href="">Privacy</a></li>
+            </ul>
+            <span class="bottom"><a href="">Change background image</a></span>
+        </footer>
+    </body>
+</html>
