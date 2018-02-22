@@ -1,0 +1,2 @@
+## TODO REACT APP
+This is a react app that allows user to enter their todo and it lists them out as soon as it is added. It has a validation that ensures users enters todo before adding and also disallows user from entering identical todo. 
