@@ -1,0 +1,19 @@
+{
+  "name": "website-using-express",
+  "version": "1.0.0",
+  "description": "a site that uses the node express for backend",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.14.9"
+  }
+}
