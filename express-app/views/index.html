@@ -31,7 +31,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <img src="/static/images/todo1.png" alt="app icon"/>
+                                <img src="static/images/todo1.png" alt="app icon"/>
                             </div>
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
@@ -49,13 +49,19 @@
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="#">Export Todo</a></li>
                                     <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">More <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Link Todo to Google Reminder</a></li>
-                                            <li><a href="#">Customize Todo Interface</a></li>
-                                            <li><a href="#">Delete Done Todos</a></li>
+                                        <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">More <span class="caret"></span></a> -->
+                                        <div class="btn-group btn-group-xs">
+                                            <button type="button" class="btn dropdown-toggle dropdown-toggle-xs" id="dropdownMenu1" data-toggle="dropdown">
+                                                More
+                                                <span class="caret"></span>
+                                            </button>
+                                        </div>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li role="presentation"><a href="#">Link Todo to Google Reminder</a></li>
+                                            <li role="presentation"><a href="#">Customize Todo Interface</a></li>
+                                            <li role="presentation"><a href="#">Delete Done Todos</a></li>
                                             <li role="separator" class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
+                                            <li role="presentation"><a href="#">Separated link</a></li>
                                         </ul>
                                     </li>
                                 </ul>
